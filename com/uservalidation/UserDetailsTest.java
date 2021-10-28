@@ -7,7 +7,7 @@ public class UserDetailsTest {
 	 private Assertions Assert;
 	  @Test
 	   public void givenPasswordShouldReturnTrue(){
-		  UserDetailsTest userDetails = new UserDetailsTest();
+		  UserDetail userDetails = new UserDetail();
 	         boolean testStatus = userDetails.passwordTest("chinku");
 	         Assert.assertTrue(testStatus);
 	   }
