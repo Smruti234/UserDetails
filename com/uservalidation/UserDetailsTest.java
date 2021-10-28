@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 public class UserDetailsTest {
 	 private Assertions Assert;
 	 @Test
-	   public void givenPasswordShouldReturnTrue(){
-		 UserDetail userDetails = new UserDetail();
-	         boolean testStatus = userDetails.passwordTest("Chinku98");
+	   public void givenPasswordShouldReturnTrueWhenSpecialCharaterhaveAnyOne(){
+	      UserDetail userDetails = new UserDetail();
+	         boolean testStatus = userDetails.passwordTest("Chinku@1234");
 	         Assert.assertTrue(testStatus);
 	   }
 	}
