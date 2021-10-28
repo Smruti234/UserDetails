@@ -3,13 +3,10 @@ package com.uservalidation;
 import java.util.regex.Pattern;
 
 public class UserDetail {
-	private static final String EMAIL_PATTERN = "^[a-zA-Z0-9+_.-]+[@]{1}[a-zA-Z0-9]+[.a-z]{3,4}([.a-zA-Z]{3})*$";
+	 private final static String MOBILE_NUMBER = "^(\\d{2})( )([6-9]{1})(\\d{9})";
+	    public boolean validateMobileNumber(String mobileNumber){
+	        Pattern pattern = Pattern.compile(MOBILE_NUMBER);
+	        return pattern.matcher(mobileNumber).matches();
+	    }
 
-    public static boolean gmailTest(String email, boolean actualValue) {
-        boolean matchesString = Pattern.matches(EMAIL_PATTERN, email);
-        if(matchesString == actualValue)
-            return actualValue;
-        else
-            return false;
-    }
-}
+	}
