@@ -8,7 +8,7 @@ public class UserDetailsTest {
 
 	   @Test
 	   public void givenEmailWhenShouldReturnTrue(){
-		   UserDetailsTest userDetails = new UserDetailsTest();
+		   UserDetail userDetails = new UserDetail();
 	         boolean testStatus = userDetails.gMail("smruti.lenka@gsdg.com.in");
 	         Assert.assertTrue(testStatus);
 	   }
