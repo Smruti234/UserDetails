@@ -5,10 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class UserDetailsTest {
 	 private Assertions Assert;
-	 @Test
+	  @Test
 	   public void givenPasswordShouldReturnTrueWhenSpecialCharaterhaveAnyOne(){
-	      UserDetail userDetails = new UserDetail();
-	         boolean testStatus = userDetails.passwordTest("Chinku@1234");
+		  UserDetail userDetails = new UserDetail();
+	         boolean testStatus = userDetails.gmailTest("abc+100@gamil.com");
 	         Assert.assertTrue(testStatus);
 	   }
 	}
