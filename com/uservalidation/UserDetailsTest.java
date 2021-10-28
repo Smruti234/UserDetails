@@ -5,11 +5,10 @@ import org.junit.jupiter.api.Test;
 
 public class UserDetailsTest {
 	 private Assertions Assert;
-
-	   @Test
-	   public void givenEmailWhenShouldReturnTrue(){
-		   UserDetailsTest userDetails = new UserDetailsTest();
-	         boolean testStatus = userDetails.gMail("smruti.lenka@gsdg.com.in");
+	 @Test
+	   public void givenPasswordShouldReturnTrue(){
+		 UserDetailsTest  userDetails = new UserDetailsTest();
+	         boolean testStatus = userDetails.passwordTest("7504614661");
 	         Assert.assertTrue(testStatus);
 	   }
-}
+	}
